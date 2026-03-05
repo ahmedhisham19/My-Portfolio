@@ -1,0 +1,203 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    border-radius: 20px;
+}
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background: #1f1f1f;
+    color: aqua;
+    *:not(main , img , p , ul , li , h2 , h3 , span , address , .name , .me , .job-title , .breif) {
+        background: linear-gradient(to right , rgb(15, 0, 0) , #4a0404);
+        background-color: #4a0404;
+        border-style: solid;
+    }
+    .header {
+        text-align: center;
+        background: linear-gradient(to right , rgb(0, 0, 0) , #4a0404);
+        box-shadow: 5px 10px 15px 3px rgba(255, 0, 0, 0.3);
+        /* border-style: none; */
+        display: flex;
+        .my-photo {
+            width: 25vw;
+            height: 31.25vw;
+            border-radius: 100vw;
+            margin: 3vw;
+            border-style: none;
+            box-shadow: 15px 10px 15px -5px cyan;
+        }
+        .me {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            .name {
+                line-height: 20vh;
+                text-align: center;
+                color: white;
+                font-size: 4rem;
+                font-weight: 900;
+                letter-spacing: 0.05em;
+                flex-basis: 1em;
+            }
+            .job-title {
+                text-align: center;
+                font-size: 1.7rem;
+                letter-spacing: 0.17em;
+                padding-right: 3.2em;
+                margin-bottom: 2rem;
+                flex-basis: 1em;
+                font-weight: 600;
+                
+            }
+            .breif {
+                flex-basis: 10em;
+                margin-top: 5em;
+                font-size: 1.4rem;
+                #contact-btn {
+                    display: inline-block;
+                    text-decoration: none;
+                    color: rgb(0, 255, 200);
+                    background-color: #ff0000;
+                    margin-top: 3%;
+                    padding: 10px;
+                    box-shadow: 3px 7px 5px rgba(0, 0, 0, 0.5);
+                }
+            }
+        }
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        flex-basis: 70%;
+        background: #1f1f1f;
+        .my-work {
+            flex-basis: 70%;
+            text-align: center;
+            box-shadow: 5px 10px 15px 3px rgba(255, 0, 0, 0.3);
+            border-style: none;
+            padding: 2%;
+            h2 {
+                padding-bottom: 5%;
+            }
+            .student-dashboard {
+                padding: 1.5%;
+                text-align: start;
+                h3 {
+                    padding-bottom: 3%;
+                }
+                .images {
+                    padding-bottom: 2%;
+                    border-style: none;
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 10px;
+                    justify-content: center;
+                    border-radius: 100px;
+                    .img1 {
+                        width: 32.5vw;
+                        height: 17.5vw;
+                    }
+                    .img2 {
+                        width: 56vw;
+                        height: 44vw;
+                    }
+                }
+                .student-dashboard-description {
+                    padding: 1%;
+                }
+                .student-dashboard-link {
+                    padding: 1%;
+                    height: 15vh;
+                    line-height: 15vh;
+                    a {
+                        display: inline-block;
+                        text-align: center;
+                        width: 20%;
+                        height: 50%;
+                        border-style: solid;
+                        text-decoration: none;
+                        color: cyan;
+                        margin-left: 20%;
+                        line-height: normal;
+                    }
+                }
+            }
+        }
+        .skills {
+            box-shadow: 5px 10px 15px 3px rgba(255, 0, 0, 0.3);
+            flex-basis: 30vh;
+            padding: 2% 2%;
+            text-align: center;
+            h2 {
+                padding-bottom: 5%;
+                letter-spacing: 2px;
+            }
+            ul {
+                * {
+                    border-style: groove;
+                    border-radius: 100vw;
+                    border-color: cyan;
+                    width: 8vw;
+                    height: 8vw;
+                    text-align: center;
+                    line-height: 8vw;
+                }
+                display: flex;
+                list-style: none;
+                justify-content: space-evenly;
+            }
+        }
+        .about-me {
+            /* text-align: center; */
+            box-shadow: 5px 10px 15px 3px rgba(255, 0, 0, 0.3);
+            padding: 1%;
+            p {
+                padding: 1%;
+                .headline {
+                    display: block;
+                    font-size: 1.3rem;
+                    padding-bottom: 0.5%;
+                }
+            }
+        }
+    }
+    footer {
+        text-align: center;
+        box-shadow: 5px 10px 15px 3px rgba(255, 0, 0, 0.3);
+        padding: 1.3%;
+        a{
+            display: inline-block;
+            text-decoration: none;
+            color: cyan;
+            width: 10vw;
+            height: 30px;
+            line-height: 30px;
+        }
+        span {
+            display: block;
+            padding: 1.25%;
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+        address {
+            display: flex;
+            justify-content: space-evenly;
+            .gmail {
+                a{
+                    width: auto; 
+                    padding: 10px; 
+                    text-align: center;
+                    line-height: 50%;
+                }
+            }
+        }
+    }
+}
