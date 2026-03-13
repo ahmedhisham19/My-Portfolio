@@ -11,18 +11,14 @@ body {
     flex-direction: column;
     gap: 20px;
     padding: 20px;
-    background: #1f1f1f;
+    background-color: #141414;
     color: aqua;
-    *:not(main , img , p , ul , li , h2 , h3 , span , address , .name , .me , .job-title , .breif) {
-        background: linear-gradient(to right , rgb(15, 0, 0) , #4a0404);
-        background-color: #4a0404;
+    *:not(main , img , p , ul , li , h2 , h3 , span , address , .name , .me , .job-title , .breif , .header) {
         border-style: solid;
     }
     .header {
         text-align: center;
-        background: linear-gradient(to right , rgb(0, 0, 0) , #4a0404);
-        box-shadow: 5px 10px 15px 3px rgba(255, 0, 0, 0.3);
-        /* border-style: none; */
+        background-color: #1f1f1f;
         display: flex;
         .my-photo {
             width: 25vw;
@@ -30,7 +26,7 @@ body {
             border-radius: 100vw;
             margin: 3vw;
             border-style: none;
-            box-shadow: 15px 10px 15px -5px cyan;
+            box-shadow: 5px 5px 15px -5px #c5f82a;
         }
         .me {
             flex-grow: 1;
@@ -54,44 +50,53 @@ body {
                 margin-bottom: 2rem;
                 flex-basis: 1em;
                 font-weight: 600;
+                color: #c5f82a;
                 
             }
             .breif {
                 flex-basis: 10em;
                 margin-top: 5em;
                 font-size: 1.4rem;
+                color: #acacac;
                 #contact-btn {
                     display: inline-block;
                     text-decoration: none;
                     color: rgb(0, 255, 200);
-                    background-color: #ff0000;
+                    background-image: linear-gradient(to right , black , red);
                     margin-top: 3%;
                     padding: 10px;
                     box-shadow: 3px 7px 5px rgba(0, 0, 0, 0.5);
+                    transition: ease 0.3s all;
+                }
+                #contact-btn:hover{
+                    transform: scale(1.05);
                 }
             }
         }
     }
-    main {
+    .main {
         display: flex;
         flex-direction: column;
         gap: 20px;
         flex-basis: 70%;
-        background: #1f1f1f;
+        background-color: #1f1f1f;
         .my-work {
             flex-basis: 70%;
             text-align: center;
-            box-shadow: 5px 10px 15px 3px rgba(255, 0, 0, 0.3);
             border-style: none;
             padding: 2%;
             h2 {
                 padding-bottom: 5%;
+                color: white;
+                font-size: 2rem;
             }
             .student-dashboard {
                 padding: 1.5%;
                 text-align: start;
+                border-color:#c5f82a;
                 h3 {
                     padding-bottom: 3%;
+                    color: #c5f82a;
                 }
                 .images {
                     padding-bottom: 2%;
@@ -112,11 +117,13 @@ body {
                 }
                 .student-dashboard-description {
                     padding: 1%;
+                    color: #acacac;
                 }
                 .student-dashboard-link {
                     padding: 1%;
                     height: 15vh;
                     line-height: 15vh;
+                    color: #acacac;
                     a {
                         display: inline-block;
                         text-align: center;
@@ -125,30 +132,42 @@ body {
                         border-style: solid;
                         text-decoration: none;
                         color: cyan;
-                        margin-left: 20%;
-                        line-height: normal;
+                        margin-left: 30%;
+                        line-height: 150%;
+                        background-image: linear-gradient(to right , black , red);
+                        transition: all 0.3s ease;
+                    }
+                    a:hover{
+                        transform: scale(1.05);
                     }
                 }
             }
         }
         .skills {
-            box-shadow: 5px 10px 15px 3px rgba(255, 0, 0, 0.3);
             flex-basis: 30vh;
             padding: 2% 2%;
+            margin: 2%;
             text-align: center;
+            border-color: #c5f82a;
             h2 {
                 padding-bottom: 5%;
                 letter-spacing: 2px;
+                color: white;
             }
             ul {
                 * {
                     border-style: groove;
                     border-radius: 100vw;
                     border-color: cyan;
+                    background-image: linear-gradient(to right , black , red);
                     width: 8vw;
                     height: 8vw;
                     text-align: center;
                     line-height: 8vw;
+                    transition: ease all 0.3s;
+                }
+                *:hover {
+                    transform: scale(0.8);
                 }
                 display: flex;
                 list-style: none;
@@ -156,30 +175,39 @@ body {
             }
         }
         .about-me {
-            /* text-align: center; */
-            box-shadow: 5px 10px 15px 3px rgba(255, 0, 0, 0.3);
             padding: 1%;
+            margin: 2%;
+            border-style: none;
             p {
                 padding: 1%;
+                color: #acacac;
                 .headline {
                     display: block;
                     font-size: 1.3rem;
                     padding-bottom: 0.5%;
+                    color: #c5f82a;
                 }
             }
         }
     }
-    footer {
+    .contact-me {
         text-align: center;
-        box-shadow: 5px 10px 15px 3px rgba(255, 0, 0, 0.3);
         padding: 1.3%;
+        padding-bottom: 5%;
+        border-style: none;
+        color: white;
         a{
             display: inline-block;
             text-decoration: none;
             color: cyan;
+            background-image: linear-gradient(to right , black , red);
             width: 10vw;
             height: 30px;
             line-height: 30px;
+            transition: all ease 0.3s;
+        }
+        a:hover {
+            transform: scale(0.9);
         }
         span {
             display: block;
