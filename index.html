@@ -3,79 +3,224 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>My Portfolio</title>
+    <meta name="description" content="I am Ahmed Hisham, a Front-End React Developer, and student at Intelligent Systems Engineering.
+    I am Building a high-performance, pixel-perfect web interfaces with React, TypeScript, & Tailwind.">
+    <meta name="keywords" content="Ahmed Hisham front end react tailwind landing page html css web developer TypeScript TS JS JavaScript">
+    <meta property="og:title" content="Ahmed Hisham | Front-End React Developer">
+    <meta property="og:description" content="Building a high-performance, & pixel-perfect web apps by React & TS">
+    <meta property="og:image" content="https://my-social-profiles.netlify.app/thumb.png">
+    <meta property="og:url" content="https://my-social-profiles.netlify.app">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://my-social-profiles.netlify.app">
+    <link rel="stylesheet" href="stylep.css">
+    <link rel="shortcut icon" href="./images/react-icon2.jfif" type="image/x-icon">
+    <title>Ahmed Hisham | React Developer</title>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Ahmed Hisham",
+            "jobTitle": "Front-end Developer",
+            "url": "https://my-social-profiles.netlify.app",
+            "sameAs": [
+                "https://www.linkedin.com/in/ahmed-hisham-ahmed19/",
+                "https://github.com/ahmedhisham19"
+            ]
+        }
+    </script>
 </head>
 <body>
-    <script src="script.js" defer></script>
-    <header class="header">
-        <img class="my-photo" src="images/photo_2026-03-02_13-45-20.jpg" alt="My Photo">
-        <div class="me">
-            <div class="name">Ahmed Hisham</div>
-            <div class="job-title">Junior Front-End React</div>
-            <div class="breif">
-                <p>My job is to make your dream a truth</p>
-                <a href="https://my-social-profiles.netlify.app/" id="contact-btn">Contact Me</a>
+<header>
+    <nav>
+        <img class="logo" src="images/me2.jpg" alt="My Photo">
+        <ul class="nav-bar">
+            <li><a href="#about">About</a></li>
+            <li><a href="#my-work">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#my-skills">Skills</a></li>
+            <li><a href="#contact-me">Contact Me</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section class="hero-section">
+        <div class="my-photo"></div>
+        <div class="my-info">
+            <h1 class="name">Ahmed Hisham</h1>
+            <p class="job-title">Junior Front-End React</p>
+            <p class="year-of-exp">1+ Years of Experience</p>
+            <p class="available"><span class="available-state"></span>Available to Work ...</p>
+            <p class="hook">My Job is to Make Your Dream a Truth</p>
+            <a id="contact-btn" href="#contact-me">Contact Me</a>
+        </div>
+    </section>
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p class="brief">
+            <span class="s1">Hi, I am Ahmed Hisham, an Intelligent Systems Engineering at HNU and a Front-End Developer.</span> 
+            Studying IS Engineering has shaped my logical approach to building a digital experiences. As a Front-End Developer, 
+            I blend this engineering mindest with a professional dedication to create a intuitive, and high performance interfaces. 
+        </p>
+        <div class="usb">
+            <h3>​What's making my work different ..?</h3>
+            <div>
+                <span class="s3">​Pixel-Perfect Implementation:</span>
+                I believe that 1 pixel makes a difference.
+            </div>
+            <div>
+                <span class="s3">​Performance as a Priority:</span>
+                A slow site is a broken site. I optimize every line of code for maximum speed.
+            </div>
+            <div>
+                <span class="s3">​Modern Tech Stack: </span>
+                I leverage the power of <span class="s5">React</span>, <span class="s5">TypeScript</span>, and <span class="s5">Tailwind CSS</span> to build scalable applications.
+            </div>
+            <div>
+                <span class="s3">​Post-Delivery Support:</span>
+                I provide 14 days of free technical support after delivery to ensure everything is running perfectly and you are 100% satisfied.
             </div>
         </div>
-    </header>
-    <main class="main">
-        <div class="my-work">
-            <h2>MY Projects</h2>
-            <div class="student-dashboard">
-                <h3>Student Dashboard UI</h3>
-                <div class="images">
-                    <img class="img img1" src="./images/student dashboard 1.png" alt="1st photo">
-                    <img class="img img2" src="./images/student dashboard 2.png" alt="2nd photo">
-                </div>
-                <p class="student-dashboard-description">Created a high fidelity student dashboard interface focusing on clean typography and visual hierarchy.Mastered complex layouts <br> using CSS Flexbox and Grid to organize data widgets and sidears.Enhanced UX with smooths CSS transitions and interactive hover states.</p>
-                <p class="student-dashboard-link">Live Demo >> 
-                    <a href="https://student-dashboard-19.netlify.app" target="_blank">Open The Dashboard</a>
-                </p>
-            </div>
-        </div>
-        <div class="about-me">
-            <p class="para1"> 
-                <span class="headline">Where Logic Meets Aesthetics</span> 
-                My passion lies at the intersection of design and logic. With React, I build scalable archetictures, but with Tailwind CSS, I find my creative flow-crafting bespoke, high-end interfaces without the constraints of traditional frameworks. I do not just style components, I curate digital experiences where every pixel and every transition is intentional.
-            </p>
-            <p class="para2">
-                I bridge the gab between bold creativity and technical precision. Using React, TypeScript, and Tailwind CSS, I transform complex design to fluid, pixel-perfect digital experience where every interaction feels alive and every line of code is type-safe.
-            </p>
-        </div>
-        <div class="skills">
-            <h2>MY SKILLS</h2>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Java Script</li>
-                <li>Type Script</li>
-                <li>Bootstrap</li>
-                <li>Tailwind</li>
-                <li>React.js</li>
-                <li>Node.js</li>
-                <li>MongoDB</li>
+    </section>
+    <section id="my-skills" class="my-skills">
+        <h2>&lt; MY Skills /&gt;</h2>
+        <div>
+            <ul class="core-tech">
+                <li class="title">Core Tech</li>
+                <li><img src="./images/html-icon.jpg" loading="lazy">HTML5</li>
+                <li><img src="./images/css-icon.jpg" loading="lazy">CSS3</li>
+                <li><img src="./images/js-icon.png" style="padding: 0 5px 7px 0;" loading="lazy">JavaScript(ES6+)</li>
+                <li style="text-shadow: 0 0 10px #c5f82a; font-size: 1.3rem;"><img src="./images/ts-icon.png" style="padding-bottom: 5px;" loading="lazy">TypeScript</li>
+            </ul>
+            <ul class="frontend-stack">
+                <li class="title">Frontend Stack</li>
+                <li><img src="./images/tailwind-icon.jfif" loading="lazy">Tailwind CSS</li>
+                <li><img src="./images/react-icon2.jfif" loading="lazy">React</li>
+            </ul>
+            <ul class="tools">
+                <li class="title">Tools</li>
+                <li><img src="./images/git-icon.png">Git & Github</li>
+                <li><img src="./images/vite-icon.jfif">vite</li>
             </ul>
         </div>
-    </main>
-    <footer class="contact-me" id="contact">
-        <span>
-            Call Me to Make Your Dream Website a Truth
-        </span>
-        <address>
-            <p class="whatsapp">
-                <a href="https://wa.me/201063211818" target="_blank">WhatsApp</a>
-            </p>
-            <p class="phone">
-                <a style="display: block; margin: 5px;" href="tel:+201063211818">01063211818</a>
-            </p>
-            <p>
-                <a style="display: block; margin: 5px;" href="tel:+201500423788">01500423788</a>
-            </p>
-            <p class="gmail">
-                <a href="mailto:ahmedhisham19646@gmail.com">Gmail</a>
-            </p>
-        </address>
-    </footer>
+    </section>
+    <section id="my-work" class="my-work">
+        <h2>&lt; MY Work /&gt;</h2>
+        <div id="genex" class="project genex">
+            <h3>Next-Gen Digital Solutions Platform</h3>
+            <figure>
+                <img class="genex-img" src="./images/genex-images/laptop view.png" alt="genex web site image from the desktop" loading="lazy">
+                <figcaption class="genex-description">
+                    I designed and developed a professional landing page for a digital solutions company. 
+                    My main goal was to present complex tech services "like software development" in a simple and easy-to-use interface. 
+                    The website works perfectly on all screens, loads very fast, and includes clear buttons to help clients get in touch easily.
+                </figcaption>
+            </figure>
+            <a class="genex-live-demo" href="https://genex-digital-solutions-welcome.netlify.app" target="_blank">Open</a>
+        </div>
+        <div class="project genex">
+            <h3>Next-Gen Digital Solutions Platform</h3>
+            <figure>
+                <img class="genex-img" src="./images/genex-images/laptop view.png" alt="genex web site image from the desktop" loading="lazy">
+                <figcaption class="genex-description">
+                    I designed and developed a professional landing page for a digital solutions company. 
+                    My main goal was to present complex tech services "like software development" in a simple and easy-to-use interface. 
+                    The website works perfectly on all screens, loads very fast, and includes clear buttons to help clients get in touch easily.
+                </figcaption>
+            </figure>
+            <a class="genex-live-demo" href="https://genex-digital-solutions-welcome.netlify.app" target="_blank">Open</a>
+        </div>
+        <div class="project genex">
+            <h3>Next-Gen Digital Solutions Platform</h3>
+            <figure>
+                <img class="genex-img" src="./images/genex-images/laptop view.png" alt="genex web site image from the desktop" loading="lazy">
+                <figcaption class="genex-description">
+                    I designed and developed a professional landing page for a digital solutions company. 
+                    My main goal was to present complex tech services "like software development" in a simple and easy-to-use interface. 
+                    The website works perfectly on all screens, loads very fast, and includes clear buttons to help clients get in touch easily.
+                </figcaption>
+            </figure>
+            <a class="genex-live-demo" href="https://genex-digital-solutions-welcome.netlify.app" target="_blank">Open</a>
+        </div>
+    </section>
+    <section id="experience" class="experience">
+        <h2>Experience</h2>
+        <div>
+            <div class="time-line">
+                <div class="starting-part time-parts">
+                    <div class="starting-point point">
+                        <img src="./images/socail icons/sm_5afc76eed0142.png" loading="lazy">
+                    </div>
+                </div>
+                <div class="time-parts">
+                    <div class="react-point point">
+                        <img src="./images/react-icon2.jfif" loading="lazy">
+                    </div>
+                </div>
+                <div class="time-parts">
+                    <div class="1st-project-point point">
+                        <a href="#genex"><img src="./images/socail icons/1st-icon2" loading="lazy"></a>
+                    </div>
+                </div>
+                <div class="in-progress-part time-parts">
+                    <div class="in-progress-point point"></div>
+                </div>
+            </div>
+            <div class="events">
+                <div class="event-wrapper">
+                    <div class="c1 card">
+                        <span class="date">2023 - Present</span>
+                        <p class="event">B.Sc. in Intelligent Systems Engineering at HNU</p>
+                    </div>
+                </div>
+                <div class="event-wrapper">
+                    <div class="c2 card">
+                        <span class="date">2025 - Present</span>
+                        <p class="event">Specialized in Front-End | React Development @ DEPI</p>
+                    </div>
+                </div>
+                <div class="event-wrapper">
+                    <div class="c3 card">
+                        <span class="date">2026</span>
+                        <p class="event">Successfully engineered and deployed my debut Front-End application</p>
+                        <a href="#genex">Check it</a>
+                    </div>
+                </div>
+                <div class="event-wrapper">
+                    <div class="c4 card">
+                        <span class="date">In Progress</span>
+                        <p class="event">
+                            Currently working on a comprehensive Book store platform that facilitates seamless buying, 
+                            borrowing, and book management experiences.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer id="contact-me">
+    <img class="footer-img" src="./images/me2.jpg" loading="lazy">
+    <div class="contact-icons">
+        <a href="https://www.linkedin.com/in/ahmed-hisham-ahmed19" target="_blank">
+            <img title="Linked In" src="./images/socail icons/linkedin-icon.png">
+        </a>
+        <a href="https://github.com/ahmedhisham19" target="_blank">
+            <img title="Github" src="./images/socail icons/github-icon.jpg">
+        </a>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ahmedhisham19646@gmail.com" target="_blank">
+            <img title="Gmail" src="./images/socail icons/gmail-icon.png">
+        </a>
+        <a href="https://wa.me/201063211818" target="_blank">
+            <img title="Whatsapp" src="./images/socail icons/whatsapp-icon2.png">
+        </a>
+        <a href="https://t.me//a22_m7" target="_blank">
+            <img title="Telegram" src="./images/socail icons/Telegram-icon1.jpg">
+        </a>
+        <a href="tel:+201500423788" target="_blank">
+            <img title="Phone Number" src="./images/socail icons/call-icon.jfif">
+        </a>
+    </div>
+    <p class="copyright">&copy;2026 | Designed & Coded by Ahmed Hisham</p>
+</footer>
 </body>
 </html>
